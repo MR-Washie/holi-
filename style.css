@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    background-size: cover;
+    transition: background 0.5s ease-in-out;
+}
+
+
+
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+
+
+#name {
+    padding: 13px 20px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.4);
+    border: 1px solid #9b9b9b;
+    color: black;
+}
+
+button {
+    font-size: 25px;
+    padding: 4px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #9b9b9b;
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+    &:active {
+        background-color: rgb(48, 48, 231);
+    }
+}
+
+.holi {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 200px;
+    color: yellow;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    #name {
+        width: 300px;
+    }
+    form {
+        font-size: 20px;
+    }
+    button {
+        font-size: 20px;
+    }
+    .holi {
+        font-size: 30px;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
